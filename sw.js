@@ -9,12 +9,12 @@ const urlsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
     'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap',
     // Ajoutez les URLs des images utilisées dans le carrousel et les cartes
-    'img/B.jpg',
-    'img/B1.jpg',
-    'img/B2.jpg',
-    'img/1.jpg',
-    'img/2.jpg',
-    'img/3.jpg'
+    '/img/B.jpg',
+    '/img/B1.jpg',
+    '/img/B2.jpg',
+    '/img/1.jpg',
+    '/img/2.jpg',
+    '/img/3.jpg'
 ];
 
 self.addEventListener('install', event => {
