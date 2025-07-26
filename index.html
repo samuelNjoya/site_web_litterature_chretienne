@@ -15,130 +15,8 @@
     <link rel="apple-touch-icon" href="icon-192x192.png">
     <!-- Manifest PWA -->
     <link rel="manifest" href="manifest.json">
-    <style>
-        :root {
-            --primary-color: #1e3a8a; /* Bleu profond pour une allure professionnelle */
-            --secondary-color: #3b82f6; /* Bleu clair pour les accents */
-            --accent-color: #b91c1c; /* Rouge pour les éléments d'action */
-            --text-color: #1f2937; /* Gris foncé pour le texte */
-            --bg-color: #f9fafb; /* Blanc cassé pour le fond */
-            --card-bg: #ffffff; /* Fond des cartes */
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .navbar {
-            background-color: var(--primary-color);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-brand, .nav-link {
-            color: white !important;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: var(--secondary-color) !important;
-            transform: scale(1.05);
-        }
-
-        .section-title {
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: 700;
-            animation: fadeIn 1s ease-in;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .carousel-item img {
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .whatsapp-btn {
-            background-color: #25D366;
-            color: white;
-            border-radius: 50px;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .whatsapp-btn:hover {
-            background-color: #1ebe56;
-            transform: scale(1.05);
-        }
-
-        .search-section {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-choose-us .feature {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .why-choose-us .feature:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-choose-us .fa-icon {
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .carousel-item img {
-                height: 250px;
-            }
-            .card-img-top {
-                height: 150px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Navigation -->
@@ -151,7 +29,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#carousel"><i class="fas fa-home me-1"></i> Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#search"><i class="fas fa-search me-1"></i> Recherche</a></li>
                     <li class="nav-item"><a class="nav-link" href="#bible"><i class="fas fa-bible me-1"></i> Bible</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cantiques"><i class="fas fa-music me-1"></i> Cantiques</a></li>
                     <li class="nav-item"><a class="nav-link" href="#litterature"><i class="fas fa-book me-1"></i> Littérature</a></li>
@@ -222,7 +99,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Ancien+Testament" class="card-img-top" alt="Ancien Testament">
+                        <img src="img/B.jpg" class="card-img-top" alt="Ancien Testament">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-book me-2"></i> Ancien Testament</h5>
                             <p class="card-text">Découvrez les récits fondateurs, les lois et les prophéties divines.</p>
@@ -231,7 +108,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Nouveau+Testament" class="card-img-top" alt="Nouveau Testament">
+                        <img src="img/B1.jpg" class="card-img-top" alt="Nouveau Testament">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-cross me-2"></i> Nouveau Testament</h5>
                             <p class="card-text">Explorez la vie, les enseignements et le sacrifice de Jésus-Christ.</p>
@@ -240,7 +117,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Études+Bibliques" class="card-img-top" alt="Études Bibliques">
+                        <img src="img/B2.jpg" class="card-img-top" alt="Études Bibliques">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-book-reader me-2"></i> Études Bibliques</h5>
                             <p class="card-text">Approfondissez votre compréhension avec des guides d'étude.</p>
@@ -259,7 +136,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Cantiques+Traditionnels" class="card-img-top" alt="Cantiques Traditionnels">
+                        <img src="img/B2.jpg" class="card-img-top" alt="Cantiques Traditionnels">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-church me-2"></i> Cantiques Traditionnels</h5>
                             <p class="card-text">Chants classiques pour vos moments de culte et d'adoration.</p>
@@ -268,7 +145,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Cantiques+Modernes" class="card-img-top" alt="Cantiques Modernes">
+                        <img src="img/B1.jpg" class="card-img-top" alt="Cantiques Modernes">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-guitar me-2"></i> Cantiques Modernes</h5>
                             <p class="card-text">Chants contemporains pour une louange dynamique.</p>
@@ -277,7 +154,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Partitions" class="card-img-top" alt="Partitions">
+                        <img src="img/B.jpg" class="card-img-top" alt="Partitions">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-music me-2"></i> Partitions</h5>
                             <p class="card-text">Partitions pour accompagner vos chants et chorales.</p>
@@ -296,7 +173,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Témoignages" class="card-img-top" alt="Témoignages">
+                        <img src="img/B.jpg" class="card-img-top" alt="Témoignages">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-heart me-2"></i> Témoignages</h5>
                             <p class="card-text">Histoires inspirantes de foi et de résilience.</p>
@@ -305,7 +182,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Enseignements" class="card-img-top" alt="Enseignements">
+                        <img src="img/B1.jpg" class="card-img-top" alt="Enseignements">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-book-open me-2"></i> Enseignements</h5>
                             <p class="card-text">Livres pour approfondir votre connaissance spirituelle.</p>
@@ -314,7 +191,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200?text=Méditations" class="card-img-top" alt="Méditations">
+                        <img src="img/B2.jpg" class="card-img-top" alt="Méditations">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-pray me-2"></i> Méditations</h5>
                             <p class="card-text">Réflexions quotidiennes pour votre croissance spirituelle.</p>
@@ -366,7 +243,7 @@
                     <a href="https://wa.me/+1234567890" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Bible</a>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <a href="https://wa.me/+1234567891" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Cantiques</a>
+                    <a href="https://wa.me/+1234567891" class="whatsapp-btn"><i class="gifab fa-whatsapp"></i> Cantiques</a>
                 </div>
                 <div class="col-md-4 mb-4">
                     <a href="https://wa.me/+1234567892" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Littérature</a>
@@ -397,15 +274,15 @@
 
         // Gestion de la recherche et du filtrage
         const documents = [
-            { title: 'Ancien Testament', category: 'bible', description: 'Récits fondateurs, lois et prophéties divines.', img: 'https://via.placeholder.com/300x200?text=Ancien+Testament' },
-            { title: 'Nouveau Testament', category: 'bible', description: 'Vie, enseignements et sacrifice de Jésus-Christ.', img: 'https://via.placeholder.com/300x200?text=Nouveau+Testament' },
-            { title: 'Études Bibliques', category: 'bible', description: 'Guides pour approfondir votre compréhension.', img: 'https://via.placeholder.com/300x200?text=Études+Bibliques' },
-            { title: 'Cantiques Traditionnels', category: 'cantiques', description: 'Chants classiques pour le culte.', img: 'https://via.placeholder.com/300x200?text=Cantiques+Traditionnels' },
-            { title: 'Cantiques Modernes', category: 'cantiques', description: 'Chants contemporains pour une louange dynamique.', img: 'https://via.placeholder.com/300x200?text=Cantiques+Modernes' },
-            { title: 'Partitions', category: 'cantiques', description: 'Partitions pour accompagner vos chants.', img: 'https://via.placeholder.com/300x200?text=Partitions' },
-            { title: 'Témoignages', category: 'litterature', description: 'Histoires inspirantes de foi et résilience.', img: 'https://via.placeholder.com/300x200?text=Témoignages' },
-            { title: 'Enseignements', category: 'litterature', description: 'Livres pour approfondir votre connaissance.', img: 'https://via.placeholder.com/300x200?text=Enseignements' },
-            { title: 'Méditations', category: 'litterature', description: 'Réflexions pour votre croissance spirituelle.', img: 'https://via.placeholder.com/300x200?text=Méditations' }
+            { title: 'Ancien Testament', category: 'bible', description: 'Récits fondateurs, lois et prophéties divines.', img: 'img/B.jpg' },
+            { title: 'Nouveau Testament', category: 'bible', description: 'Vie, enseignements et sacrifice de Jésus-Christ.', img: 'img/B1.jpg' },
+            { title: 'Études Bibliques', category: 'bible', description: 'Guides pour approfondir votre compréhension.', img: 'img/B2.jpg' },
+            { title: 'Cantiques Traditionnels', category: 'cantiques', description: 'Chants classiques pour le culte.', img: 'img/B.jpg' },
+            { title: 'Cantiques Modernes', category: 'cantiques', description: 'Chants contemporains pour une louange dynamique.', img: 'img/B2.jpg' },
+            { title: 'Partitions', category: 'cantiques', description: 'Partitions pour accompagner vos chants.', img: 'img/B1.jpg' },
+            { title: 'Témoignages', category: 'litterature', description: 'Histoires inspirantes de foi et résilience.', img: 'img/B2.jpg' },
+            { title: 'Enseignements', category: 'litterature', description: 'Livres pour approfondir votre connaissance.', img: 'img/B1.jpg' },
+            { title: 'Méditations', category: 'litterature', description: 'Réflexions pour votre croissance spirituelle.', img: 'img/B.jpg' }
         ];
 
         const searchInput = document.getElementById('searchInput');
